@@ -1,4 +1,4 @@
-@admin_login
+@admin_login @smoke
 Feature: admin login feature
 
   Scenario: login_with_employee_credentials

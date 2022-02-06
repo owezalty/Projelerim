@@ -20,7 +20,7 @@
       And user clicks on transfer money
       When user select the current account to transfer money from
       And user select the other account to transfer money to
-      When user provides the balance "5"
+      When user provides the balance "300"
       And user provides the balancecent "4"
       And user types the description
       Then user makes the money transfer and verify success message

@@ -1,49 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.253">
-    <testcase classname="Google_Search_Functionality" name="TC_03_flower_search" time="16.826">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.713">
+    <testcase classname="database features" name="TC01_read_customer_information" time="2.3">
         <system-out>
-            <![CDATA[Given user is on the google page............................................passed
-When user search for flower on google.......................................passed
-Then verify the result has flower related...................................passed
-Then capture the screenshot.................................................passed
-Then close the application..................................................passed
-]]>
-        </system-out>
-    </testcase>
-</testsuite>
->
-        <system-out>
-            <![CDATA[Given user is on the google page............................................passed
-When user search for "tea pot"..............................................passed
-Then verify the result has "tea pot"........................................passed
-Then close the application..................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="search_using_scenario_outline" name="google_search_test_3" time="23.519">
-        <system-out>
-            <![CDATA[Given user is on the google page............................................passed
-When user search for "tesla"................................................passed
-Then verify the result has "tesla"..........................................passed
-Then close the application..................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="search_using_scenario_outline" name="google_search_test_4" time="15.818">
-        <system-out>
-            <![CDATA[Given user is on the google page............................................passed
-When user search for "honda"................................................passed
-Then verify the result has "honda"..........................................passed
-Then close the application..................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="search_using_scenario_outline" name="google_search_test_5" time="15.184">
-        <system-out>
-            <![CDATA[Given user is on the google page............................................passed
-When user search for "broadway".............................................passed
-Then verify the result has "broadway".......................................passed
-Then close the application..................................................passed
+            <![CDATA[Given user connects to the database.........................................passed
+And user gets the "*" from "tp_customer" table..............................passed
+And user reads all of the "ssn" columns data................................passed
 ]]>
         </system-out>
     </testcase>

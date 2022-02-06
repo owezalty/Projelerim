@@ -1,20 +1,25 @@
 package runners;
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
-                "html:target/default-cucumber-reports.html",
+                "pretty", //This is used for more readable
+                "html:target/default-cucumber-reports.html",//Most useable. Use this reports.
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
-                "rerun:target/failedRerun.txt"
         },
         features = "./src/test/resources/features",
-        glue = "stepdefinitions",
-        tags = "@smoke",
+        glue = "stepdefinitions",//run stepdefinitions and Hooks folder
+        tags = "@read_feature",
         dryRun = false
+
 )
-public class SmokeTestRunner {
+public class DBRunner {
+
 }
