@@ -1,0 +1,10 @@
+1. We add 3 plugins in the pom
+- failsafe
+- surefire
+- cucumber-reporting
+2. Create multiple runner => We create these runners for parallel execution
+Normally we run our Runner class that we created before.
+- TestRunner
+- SmokeTestRunner
+- RegressionTestRunner
+3. Run from the Terminal.

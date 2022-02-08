@@ -34,7 +34,7 @@ public class MoneyTransferStepDefs {
     @When("user select the current account to transfer money from")
     public void user_select_the_current_account_to_transfer_money_from() {
         Driver.wait(3);
-        Driver.selectByIndex(moneyTransferPage.transferFrom,2);
+        Driver.selectByIndex(moneyTransferPage.transferFrom,1);
 
         }
     @When("user select the other account to transfer money to")

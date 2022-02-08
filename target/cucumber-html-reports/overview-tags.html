@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@admin_login",  "@employee_login_scenario_outline",  "@money_transfer",  "@smoke", ] ,
+        labels:  [ "@admin_login",  "@employee_login_scenario_outline",  "@money_transfer",  "@smoke",  "@user_registration", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 37.50,  100.00,  86.67,  91.86, ] 
+                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 12.50,  0.00,  6.67,  2.33, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 50.00,  0.00,  6.67,  5.81, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-framework</td>
         <td>1</td>
-      <td>06 Feb 2022, 20:12</td>
+      <td>06 Feb 2022, 22:58</td>
     </tr>
   </tbody>
 </table>
@@ -199,19 +199,19 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-tag_1668265528.html">@admin_login</a></td>
 
-        <td      class="passed"    >3</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >4</td>
+        <td      class="passed"    >8</td>
+        <td >0</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">8</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="11554988400">11.554</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="9482586900">9.482</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_1807151385.html">@employee_login_scenario_outline</a></td>
@@ -227,75 +227,92 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">9</td>
 
-        <td class="duration" data-value="202708287100">3:22.708</td>
+        <td class="duration" data-value="158856642100">2:38.856</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_1646080201.html">@money_transfer</a></td>
 
-        <td      class="passed"    >13</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
+        <td      class="passed"    >15</td>
+        <td >0</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">15</td>
 
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >1</td>
+        <td  class="passed"    >2</td>
+        <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="39252265900">39.252</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="21030471800">21.030</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_4089311534.html">@smoke</a></td>
 
-        <td      class="passed"    >79</td>
-        <td      class="failed"    >2</td>
-        <td     class="skipped"   >5</td>
+        <td      class="passed"    >95</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">86</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">95</td>
 
-        <td  class="passed"    >10</td>
-        <td  class="failed"    >2</td>
-        <td class="total">12</td>
+        <td  class="passed"    >13</td>
+        <td >0</td>
+        <td class="total">13</td>
 
-        <td class="duration" data-value="253515541400">4:13.515</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="201287082500">3:21.287</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_286896236.html">@user_registration</a></td>
+
+        <td      class="passed"    >9</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="11917381700">11.917</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>158</td>
-      <td>4</td>
-      <td>10</td>
+      <td>190</td>
       <td>0</td>
       <td>0</td>
-      <td>172</td>
+      <td>0</td>
+      <td>0</td>
+      <td>190</td>
 
-      <td>18</td>
-      <td>6</td>
-      <td>24</td>
+      <td>26</td>
+      <td>0</td>
+      <td>26</td>
 
-      <td class="duration">8:27.031</td>
-      <td>4</td>
+      <td class="duration">6:42.574</td>
+      <td>5</td>
     </tr>
     <tr>
       <td></td>
-      <td>91.86%</td>
-      <td>2.33%</td>
-      <td>5.81%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>75.00%</td>
-      <td>25.00%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>33.33%</td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-framework</td>
         <td>1</td>
-      <td>06 Feb 2022, 20:12</td>
+      <td>06 Feb 2022, 22:58</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">admin login feature</td>
-          <td      class="passed"    >3</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >4</td>
+          <td      class="passed"    >8</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">8</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="11554988400">11.554</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="9482586900">9.482</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -176,7 +176,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">admin login feature</span>
 
@@ -197,12 +197,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">11.554</span>
+  <span class="lead-duration duration">9.482</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">login_with_employee_credentials</span>
 
@@ -213,16 +213,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -232,7 +232,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -240,7 +240,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user is on the login page</span>
 
-  <span class="lead-duration duration">1.194</span>
+  <span class="lead-duration duration">5.884</span>
 
 </div>
 
@@ -267,7 +267,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user clicks on login dropdown</span>
 
-  <span class="lead-duration duration">0.205</span>
+  <span class="lead-duration duration">0.102</span>
 
 </div>
 
@@ -294,7 +294,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user clicks on sign in button</span>
 
-  <span class="lead-duration duration">0.139</span>
+  <span class="lead-duration duration">0.158</span>
 
 </div>
 
@@ -317,11 +317,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user enters admin_id and admin_password</span>
 
-  <span class="lead-duration duration">10.015</span>
+  <span class="lead-duration duration">0.188</span>
 
 </div>
 
@@ -329,46 +329,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
-  (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-OIPIP68', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bcf3c83dc09e95f7ea430cbfab6eb615, findElement {using=id, value=username}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\gues\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55768}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55768/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bcf3c83dc09e95f7ea430cbfab6eb615
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
-	at stepdefinitions.LoginStepDefs.user_enters_admin_id_and_admin_password(LoginStepDefs.java:68)
-	at &#10045;.user enters admin_id and admin_password(file:///C:/Users/gues/IdeaProjects/mycucumberproject/./src/test/resources/features/day21_admin_login.feature:8)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
           <table class="step-arguments">
@@ -394,11 +354,11 @@ Session ID: bcf3c83dc09e95f7ea430cbfab6eb615
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks on the login button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.108</span>
 
 </div>
 
@@ -421,11 +381,11 @@ Session ID: bcf3c83dc09e95f7ea430cbfab6eb615
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">verify the login is successful</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.042</span>
 
 </div>
 
@@ -448,11 +408,11 @@ Session ID: bcf3c83dc09e95f7ea430cbfab6eb615
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">capture the screenshot</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.015</span>
 
 </div>
 
@@ -475,11 +435,11 @@ Session ID: bcf3c83dc09e95f7ea430cbfab6eb615
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">close the application</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.982</span>
 
 </div>
 

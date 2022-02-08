@@ -82,7 +82,7 @@ public class DBUtils {
         }
         return statement;
     }
-    //Use this to get the ResutSet object
+    //Use this to get the ResultSet object
     public static ResultSet getResultset() {
         try {
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);

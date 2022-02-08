@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Tag: @admin_login</title>
+<title>Cucumber Reports (no 1) - Feature: registration feature</title>
 
 </head>
 <body>
@@ -89,7 +89,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Tag Report</h2>
+    <h2>Feature Report</h2>
   </div>
 </div>
 
@@ -108,7 +108,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Tag</th>
+    <th>Feature</th>
     <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -128,19 +128,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@admin_login</td>
-          <td      class="passed"    >8</td>
+          <td class="tagname">registration feature</td>
+          <td      class="passed"    >9</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">8</td>
+          <td class="total">9</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="9482586900">9.482</td>
+          <td class="duration" data-value="11917381700">11.917</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -167,31 +167,44 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="elements">
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3_974481768.html">admin login feature</a>
-    </div>
-
+      <div class="feature">
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_1668265528.html">@admin_login</a>
+       <a href="report-tag_286896236.html">@user_registration</a>
        <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">9.482</span>
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">registration feature</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_286896236.html">@user_registration</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">11.917</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">login_with_employee_credentials</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">user should be able to register</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -225,36 +238,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user is on the login page</span>
+  <span class="name">user is on the registration page</span>
 
-  <span class="lead-duration duration">5.884</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks on login dropdown</span>
-
-  <span class="lead-duration duration">0.102</span>
+  <span class="lead-duration duration">7.147</span>
 
 </div>
 
@@ -279,9 +265,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user clicks on sign in button</span>
+  <span class="name">user enters ssn number as <span class="argument">&quot;523-12-4283&quot;</span></span>
 
-  <span class="lead-duration duration">0.158</span>
+  <span class="lead-duration duration">0.193</span>
 
 </div>
 
@@ -306,9 +292,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user enters admin_id and admin_password</span>
+  <span class="name">user enters firstname as  <span class="argument">&quot;New User&quot;</span> and lastname as <span class="argument">&quot;last&quot;</span></span>
 
-  <span class="lead-duration duration">0.188</span>
+  <span class="lead-duration duration">0.478</span>
 
 </div>
 
@@ -318,16 +304,6 @@ $(document).ready(function() {
 
 
 
-          <table class="step-arguments">
-              <tr>
-                  <td>admin_username</td>
-                  <td>admin_password</td>
-              </tr>
-              <tr>
-                  <td>CWoburn</td>
-                  <td>Cw192837?</td>
-              </tr>
-          </table>
 
 
 
@@ -343,9 +319,117 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user clicks on the login button</span>
+  <span class="name">user provides address <span class="argument">&quot;Milky way&quot;</span></span>
 
-  <span class="lead-duration duration">0.108</span>
+  <span class="lead-duration duration">0.113</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user provides phoneNumber <span class="argument">&quot;456-279-5588&quot;</span></span>
+
+  <span class="lead-duration duration">0.115</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user provides username <span class="argument">&quot;utiretsdaazs&quot;</span></span>
+
+  <span class="lead-duration duration">0.113</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user provides email <span class="argument">&quot;kalin1se410@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">0.241</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user provides the password as <span class="argument">&quot;Utilisateur123.&quot;</span> and secondPassword as <span class="argument">&quot;Utilisateur123.&quot;</span></span>
+
+  <span class="lead-duration duration">0.376</span>
 
 </div>
 
@@ -370,63 +454,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify the login is successful</span>
+  <span class="name">user clicks on the register button and see the success message as <span class="argument">&quot;successfully registered&quot;</span></span>
 
-  <span class="lead-duration duration">1.042</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">capture the screenshot</span>
-
-  <span class="lead-duration duration">1.015</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">close the application</span>
-
-  <span class="lead-duration duration">0.982</span>
+  <span class="lead-duration duration">3.137</span>
 
 </div>
 
@@ -456,6 +486,7 @@ $(document).ready(function() {
   </div>
 </div>
 
+        </div>
 
       </div>
     </div>

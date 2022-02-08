@@ -1,10 +1,13 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import utilities.DBUtils;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseStepDefs {
@@ -37,7 +40,42 @@ public class DatabaseStepDefs {
         Object columnData2 =DBUtils.getResultset().getObject(column);
         System.out.println(columnData2);
 
+        //Going to the next row
+        DBUtils.getResultset().next();
+        Object columnData3 = DBUtils.getResultset().getObject(column);
+        System.out.println(columnData3);
 
+        while(DBUtils.getResultset().next()){//If there is next row data, then get in the loop
+            Object eachColumnData = DBUtils.getResultset().getObject(column);
+            System.out.println(eachColumnData);
+
+        }
+    }
+    @Then("close the database connection")
+    public void close_the_database_connection() {
+        DBUtils.closeConnection();
+    }
+
+    @Given("verify {string} table {string} column contains {string} data")
+    public void verify_table_column_contains_data(String table, String column, String data) {
+        //pseudo code
+        //get the list of column data
+        List<Object> allColumnData = DBUtils.getColumnData("select * from " + table,column);
+        System.out.println(allColumnData);
+        //add our expected data in a list
+        List<Object> expectedData = new ArrayList<>();
+        expectedData.add(data);
+        //then compare the objects
+        Assert.assertTrue(allColumnData.containsAll(expectedData));
+
+    }
+
+    @Given("verify the row count")
+    public void verify_the_row_count() throws Exception {
+        int RowCount = DBUtils.getRowCount();
+        System.out.println("Table Row Count : "+ RowCount
+
+        );
     }
 
 
