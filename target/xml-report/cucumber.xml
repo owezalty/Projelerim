@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.51">
-    <testcase classname="database features" name="TC07_read_account_information_type" time="3.161">
-        <system-out>
-            <![CDATA[Given user connects to the database.........................................passed
-And user gets the "*" from "tp_account" table...............................passed
-And verify the row count....................................................passed
-And verify "tp_account" table "account_type" column contains "CHECKING" data.passed
-And verify "tp_account" table "account_type" column contains "SAVING" data..passed
-And verify "tp_account" table "account_type" column contains "INVESTING" data.passed
-And verify "tp_account" table "account_type" column contains "CREDIT_CARD" data.passed
-Then close the database connection..........................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.967">
+    <testcase classname="grid_feature" name="TC_01_Testing_On_Chrome" time="0.559">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given user is on the application url with chrome............................undefined
+Then verify the title of page is GMIBANK....................................skipped
+Then close remote driver....................................................skipped
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

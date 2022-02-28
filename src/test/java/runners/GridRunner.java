@@ -1,25 +1,23 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
+
         plugin = {
-                "pretty", //This is used for more readable
-                "html:target/default-cucumber-reports.html",//Most useable. Use this reports.
+                "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failedRerun.txt"
         },
         features = "./src/test/resources/features",
-        glue = "stepdefinitions",//run stepdefinitions and Hooks folder
-        tags = "  @db_customer1",
-        dryRun = false
-
+        glue = "stepdefinitions",
+        tags = "@grid_feature02",
+        dryRun = true
 )
-public class DBRunner {
+public class GridRunner {
 
 }
